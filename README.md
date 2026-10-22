@@ -1,16 +1,22 @@
 <div align="center">
 
-  <!-- Terminal Typing Header -->
-  <a href="https://github.com/Priyanka-205">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=00FF66&center=true&vCenter=true&width=600&lines=priyanka%40mainframe%3A~%24+whoami;Priyanka+Patel+%2F%2F+Software+Engineer;Focus%3A+Backend+Systems+%26+Algorithms;Stack%3A+C+%7C+C%2B%2B+%7C+MERN+%7C+TypeScript;%22Elegant+code+is+an+art+form.%22" alt="Typing SVG" />
-  </a>
+  <!-- Futuristic Sci-Fi HUD Banner -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Priyanka-205/Priyanka-205/main/header.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Priyanka-205/Priyanka-205/main/header.svg">
+    <img src="https://raw.githubusercontent.com/Priyanka-205/Priyanka-205/main/header.svg" width="100%" alt="Priyanka Patel // Futuristic Cyber HUD" />
+  </picture>
 
+  <br/>
+
+  <!-- High-Tech Telemetry Pills -->
   <p align="center">
     <a href="mailto:kumarirani8296@gmail.com">
-      <img src="https://img.shields.io/badge/EMAIL-kumarirani8296%40gmail.com-00ff66?style=flat-square&logo=gmail&logoColor=black" alt="Email" />
+      <img src="https://img.shields.io/badge/UPLINK-kumarirani8296%40gmail.com-00ff99?style=flat-square&logo=gmail&logoColor=black" alt="Email Uplink" />
     </a>
-    <img src="https://img.shields.io/badge/LOCATION-INDIA-00f0ff?style=flat-square&logo=googlemaps&logoColor=black" alt="Location" />
-    <img src="https://img.shields.io/badge/STATUS-ACTIVE__DEV-39d353?style=flat-square&logo=terminal&logoColor=black" alt="Status" />
+    <img src="https://img.shields.io/badge/NODE-INDIA-00e5ff?style=flat-square&logo=googlemaps&logoColor=black" alt="Location Node" />
+    <img src="https://img.shields.io/badge/SYS_STATUS-OPERATIONAL-00ff66?style=flat-square&logo=gnubash&logoColor=black" alt="System Status" />
+    <img src="https://img.shields.io/badge/CLEARANCE-SWE__ALPHA-ffd700?style=flat-square&logo=hackthebox&logoColor=black" alt="Clearance" />
   </p>
 
   <p align="center">
@@ -21,41 +27,39 @@
 
 ---
 
-### ⚡ System Diagnostics & Profile
+### 🛸 // CLASSIFIED DEVELOPER DOSSIER
 
 ```bash
-┌──(priyanka㉿mainframe)-[~/identity]
-└─$ cat profile.json
-{
-  "name": "Priyanka Patel",
-  "title": "Software Engineer & Backend Explorer",
-  "origin": "India",
-  "active_track": "Data Structures & Algorithms using C",
-  "web_stack": "MERN (MongoDB, Express.js, React, Node.js)",
-  "mindset": "Elegant code is as much an art form as it is a science."
-}
+╔══════════════════════════════════════════════════════════════════════════════════════╗
+║  SYS_ID     : PRIYANKA PATEL                                                         ║
+║  DIRECTIVE  : Software Engineering • Backend Systems • Algorithmic Optimization     ║
+║  LOCATION   : India [IN]                                                             ║
+║  ACTIVE OP  : Sharpening Data Structures & Algorithms using C                        ║
+║  STACK EXP  : MERN Stack (MongoDB, Express.js, React, Node.js)                       ║
+║  PHILOSOPHY : "Elegant code is as much an art form as it is a science."              ║
+╚══════════════════════════════════════════════════════════════════════════════════════╝
 ```
 
-* 🔭 **Current Focus:** Sharpening core algorithms and data structures using **C**.
-* 🌱 **Currently Learning:** Mastering full-stack architecture with the **MERN Stack** (MongoDB, Express.js, React, Node.js).
-* 📫 **Direct Uplink:** Reach out anytime at [`kumarirani8296@gmail.com`](mailto:kumarirani8296@gmail.com).
-* ⚡ **Philosophy:** I believe that elegant code is as much an art form as it is a science.
+* 🔭 **Current Focus:** Sharpening core algorithms, data structures, and memory efficiency in **C**.
+* 🌱 **Current Evolution:** Mastering full-stack enterprise architecture with the **MERN Stack** (MongoDB, Express.js, React, Node.js).
+* 📫 **Direct Uplink:** Inquiries and collaboration via [`kumarirani8296@gmail.com`](mailto:kumarirani8296@gmail.com).
+* ⚡ **Core Tenet:** I believe that elegant code is as much an art form as it is a science.
 
 ---
 
-### 🐍 Contribution Grid // Cyber Serpent
+### 🐍 // CONTRIBUTION MATRIX FEED
 
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Priyanka-205/Priyanka-205/output/github-contribution-grid-snake-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Priyanka-205/Priyanka-205/output/github-contribution-grid-snake.svg">
-    <img alt="Contribution Snake" src="https://raw.githubusercontent.com/Priyanka-205/Priyanka-205/output/github-contribution-grid-snake.svg" width="100%">
+    <img alt="Matrix Contribution Snake" src="https://raw.githubusercontent.com/Priyanka-205/Priyanka-205/output/github-contribution-grid-snake.svg" width="100%">
   </picture>
 </div>
 
 ---
 
-### 🛠️ Developer Arsenal & Stack
+### ⚡ // ARSENAL & TECH TOOLKIT
 
 #### 🖥️ Core Systems & Languages
 <p>
@@ -69,7 +73,7 @@
 <p>
   <img src="https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React" />
   <img src="https://img.shields.io/badge/Vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
-  <img src="https://img.shields.io/badge/MERN_Stack-1A1A1A?style=for-the-badge&logo=mongodb&logoColor=00ff66" alt="MERN Stack" />
+  <img src="https://img.shields.io/badge/MERN_Stack-0D1117?style=for-the-badge&logo=mongodb&logoColor=00ff99" alt="MERN Stack" />
 </p>
 
 #### 🗄️ Persistence & Cloud Databases
@@ -104,7 +108,7 @@
 
 ---
 
-### 📊 GitHub Activity & Metrics
+### 📊 // TELEMETRY & SYSTEM ANALYTICS
 
 <div align="center">
   <table border="0">
@@ -121,7 +125,7 @@
 
 ---
 
-### 💬 Hacker's Thought of the Day
+### 💬 // TRANSMISSION OF THE DAY
 
 <div align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Dev Quote" />
@@ -130,5 +134,5 @@
 ---
 
 <div align="center">
-  <code>echo "Engineered with focus by Priyanka Patel"</code>
+  <sub>// <b>STATUS</b>: READY FOR CODE REVIEW // HOST: <a href="https://github.com/Priyanka-205">PRIYANKA-205</a> //</sub>
 </div>
