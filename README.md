@@ -1,17 +1,16 @@
 <div align="center">
 
-  # ✦ Hi there, I'm Priyanka Patel 👋 ✦
-  
-  <p align="center">
-    <strong>Developer • Problem Solver • Tech Explorer</strong>
-  </p>
+  <!-- Terminal Typing Header -->
+  <a href="https://github.com/Priyanka-205">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=00FF66&center=true&vCenter=true&width=600&lines=priyanka%40mainframe%3A~%24+whoami;Priyanka+Patel+%2F%2F+Software+Engineer;Focus%3A+Backend+Systems+%26+Algorithms;Stack%3A+C+%7C+C%2B%2B+%7C+MERN+%7C+TypeScript;%22Elegant+code+is+an+art+form.%22" alt="Typing SVG" />
+  </a>
 
   <p align="center">
     <a href="mailto:kumarirani8296@gmail.com">
-      <img src="https://img.shields.io/badge/Email-kumarirani8296%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
+      <img src="https://img.shields.io/badge/EMAIL-kumarirani8296%40gmail.com-00ff66?style=flat-square&logo=gmail&logoColor=black" alt="Email" />
     </a>
-    <img src="https://img.shields.io/badge/Location-India-007ACC?style=for-the-badge&logo=googlemaps&logoColor=white" alt="India" />
-    <img src="https://komarev.com/ghpvc/?username=Priyanka-205&style=for-the-badge&color=blueviolet" alt="Profile Views" />
+    <img src="https://img.shields.io/badge/LOCATION-INDIA-00f0ff?style=flat-square&logo=googlemaps&logoColor=black" alt="Location" />
+    <img src="https://img.shields.io/badge/STATUS-ACTIVE__DEV-39d353?style=flat-square&logo=terminal&logoColor=black" alt="Status" />
   </p>
 
   <p align="center">
@@ -22,37 +21,43 @@
 
 ---
 
-### 💫 About Me
+### ⚡ System Diagnostics & Profile
 
-```yaml
-Name: Priyanka Patel
-Origin: India
-Focus: Backend Technologies, DSA & Scalable Systems
-Philosophy: "Elegant code is as much an art form as it is a science."
+```bash
+┌──(priyanka㉿mainframe)-[~/identity]
+└─$ cat profile.json
+{
+  "name": "Priyanka Patel",
+  "title": "Software Engineer & Backend Explorer",
+  "origin": "India",
+  "active_track": "Data Structures & Algorithms using C",
+  "web_stack": "MERN (MongoDB, Express.js, React, Node.js)",
+  "mindset": "Elegant code is as much an art form as it is a science."
+}
 ```
 
-* 🔭 **Current Focus:** Sharpening my skills in **Data Structures and Algorithms using C**.
-* 🌱 **Currently Learning:** Mastering the **MERN Stack** (MongoDB, Express.js, React, Node.js) for full-stack engineering.
-* 📫 **Get in Touch:** Reach out to me directly at [`kumarirani8296@gmail.com`](mailto:kumarirani8296@gmail.com).
-* ⚡ **Fun Fact:** I believe that elegant code is as much an art form as it is a science.
+* 🔭 **Current Focus:** Sharpening core algorithms and data structures using **C**.
+* 🌱 **Currently Learning:** Mastering full-stack architecture with the **MERN Stack** (MongoDB, Express.js, React, Node.js).
+* 📫 **Direct Uplink:** Reach out anytime at [`kumarirani8296@gmail.com`](mailto:kumarirani8296@gmail.com).
+* ⚡ **Philosophy:** I believe that elegant code is as much an art form as it is a science.
 
 ---
 
-### 🐍 Contribution Activity
+### 🐍 Contribution Grid // Cyber Serpent
 
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Priyanka-205/Priyanka-205/output/github-contribution-grid-snake-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Priyanka-205/Priyanka-205/output/github-contribution-grid-snake.svg">
-    <img alt="GitHub Contribution Grid Snake" src="https://raw.githubusercontent.com/Priyanka-205/Priyanka-205/output/github-contribution-grid-snake.svg" width="100%">
+    <img alt="Contribution Snake" src="https://raw.githubusercontent.com/Priyanka-205/Priyanka-205/output/github-contribution-grid-snake.svg" width="100%">
   </picture>
 </div>
 
 ---
 
-### 💻 Tech Stack & Toolkit
+### 🛠️ Developer Arsenal & Stack
 
-#### 🚀 Languages
+#### 🖥️ Core Systems & Languages
 <p>
   <img src="https://img.shields.io/badge/C-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white" alt="C" />
   <img src="https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" />
@@ -60,14 +65,14 @@ Philosophy: "Elegant code is as much an art form as it is a science."
   <img src="https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white" alt="PowerShell" />
 </p>
 
-#### 🌐 Frontend & Full Stack
+#### 🌐 Web Engineering & Architecture
 <p>
   <img src="https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React" />
   <img src="https://img.shields.io/badge/Vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
-  <img src="https://img.shields.io/badge/MERN_Stack-303030?style=for-the-badge&logo=mongodb&logoColor=47A248" alt="MERN Stack" />
+  <img src="https://img.shields.io/badge/MERN_Stack-1A1A1A?style=for-the-badge&logo=mongodb&logoColor=00ff66" alt="MERN Stack" />
 </p>
 
-#### 🗄️ Databases & Cloud
+#### 🗄️ Persistence & Cloud Databases
 <p>
   <img src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
   <img src="https://img.shields.io/badge/MySQL-%234479A1.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
@@ -75,7 +80,7 @@ Philosophy: "Elegant code is as much an art form as it is a science."
   <img src="https://img.shields.io/badge/Firebase-%23FFA611.svg?style=for-the-badge&logo=firebase&logoColor=white" alt="Firebase" />
 </p>
 
-#### 🧠 Machine Learning & Data Science
+#### 🧠 Machine Learning & Scientific Computing
 <p>
   <img src="https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white" alt="PyTorch" />
   <img src="https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white" alt="TensorFlow" />
@@ -87,7 +92,7 @@ Philosophy: "Elegant code is as much an art form as it is a science."
   <img src="https://img.shields.io/badge/Anaconda-%2344A833.svg?style=for-the-badge&logo=anaconda&logoColor=white" alt="Anaconda" />
 </p>
 
-#### ⚡ Hardware & Creative Tools
+#### ⚡ Hardware & Environment
 <p>
   <img src="https://img.shields.io/badge/Arduino-%2300979D.svg?style=for-the-badge&logo=Arduino&logoColor=white" alt="Arduino" />
   <img src="https://img.shields.io/badge/NVIDIA-%2376B900.svg?style=for-the-badge&logo=nVIDIA&logoColor=white" alt="NVIDIA" />
@@ -99,26 +104,24 @@ Philosophy: "Elegant code is as much an art form as it is a science."
 
 ---
 
-### 📊 GitHub Analytics
+### 📊 GitHub Activity & Metrics
 
 <div align="center">
   <table border="0">
-    <tr>
+    <tr align="center">
       <td>
-        <img src="https://github-readme-stats.vercel.app/api?username=Priyanka-205&show_icons=true&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true" alt="Priyanka's GitHub Stats" />
+        <img src="https://github-readme-stats.vercel.app/api?username=Priyanka-205&show_icons=true&theme=tokyonight&hide_border=false" alt="Priyanka's GitHub Stats" />
       </td>
       <td>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Priyanka-205&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true&layout=compact" alt="Top Languages" />
+        <img src="https://streak-stats.demolab.com/?user=Priyanka-205&theme=tokyonight&hide_border=false" alt="GitHub Streak" />
       </td>
     </tr>
   </table>
-  <br/>
-  <img src="https://nirzak-streak-stats.vercel.app/?user=Priyanka-205&theme=tokyonight&hide_border=false" alt="GitHub Streak" />
 </div>
 
 ---
 
-### ✍️ Random Dev Quote
+### 💬 Hacker's Thought of the Day
 
 <div align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Dev Quote" />
@@ -127,5 +130,5 @@ Philosophy: "Elegant code is as much an art form as it is a science."
 ---
 
 <div align="center">
-  <sub>Designed with ❤️ by <a href="https://github.com/Priyanka-205">Priyanka Patel</a></sub>
+  <code>echo "Engineered with focus by Priyanka Patel"</code>
 </div>
