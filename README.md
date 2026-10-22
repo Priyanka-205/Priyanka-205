@@ -2,9 +2,9 @@
 
   <!-- Professional Futuristic HUD Banner -->
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./header.svg?v=3">
-    <source media="(prefers-color-scheme: light)" srcset="./header.svg?v=3">
-    <img src="https://raw.githubusercontent.com/Priyanka-205/Priyanka-205/main/header.svg?v=3" width="100%" alt="Priyanka Patel // Software Engineer" />
+    <source media="(prefers-color-scheme: dark)" srcset="./header.svg?v=4">
+    <source media="(prefers-color-scheme: light)" srcset="./header.svg?v=4">
+    <img src="https://raw.githubusercontent.com/Priyanka-205/Priyanka-205/main/header.svg?v=4" width="100%" alt="Priyanka Patel // Software Engineer" />
   </picture>
 
   <br/><br/>
