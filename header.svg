@@ -1,255 +1,186 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 320" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 280" width="100%" height="100%">
   <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#040711" />
-      <stop offset="50%" stop-color="#080d1e" />
-      <stop offset="100%" stop-color="#03050b" />
+    <!-- Dark Space Gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070a14" />
+      <stop offset="40%" stop-color="#0c1122" />
+      <stop offset="100%" stop-color="#05070f" />
     </linearGradient>
 
-    <!-- Scanner Beam Gradient -->
-    <linearGradient id="scan-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- Title Gradient -->
+    <linearGradient id="title-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#cffafe" />
+    </linearGradient>
+
+    <!-- Subtitle Laser Line Gradient -->
+    <linearGradient id="laser-left" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="rgba(0, 229, 255, 0)" />
-      <stop offset="25%" stop-color="rgba(0, 229, 255, 0.4)" />
-      <stop offset="50%" stop-color="rgba(0, 255, 180, 0.95)" />
-      <stop offset="75%" stop-color="rgba(0, 229, 255, 0.4)" />
+      <stop offset="100%" stop-color="rgba(0, 229, 255, 0.7)" />
+    </linearGradient>
+
+    <linearGradient id="laser-right" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(0, 229, 255, 0.7)" />
       <stop offset="100%" stop-color="rgba(0, 229, 255, 0)" />
     </linearGradient>
 
-    <!-- Hexagon Grid Pattern -->
-    <pattern id="hex-grid" width="30" height="52" patternUnits="userSpaceOnUse">
-      <path d="M15 0 L30 8.66 L30 26 L15 34.66 L0 26 L0 8.66 Z M15 52 L30 43.34 L30 26 L15 34.66 L0 26 L0 43.34 Z" 
-            fill="none" stroke="rgba(0, 229, 255, 0.05)" stroke-width="1" />
-    </pattern>
-
     <!-- Card Background Gradient -->
-    <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="rgba(11, 18, 35, 0.9)" />
-      <stop offset="100%" stop-color="rgba(6, 10, 20, 0.95)" />
+    <linearGradient id="card-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(15, 23, 42, 0.75)" />
+      <stop offset="100%" stop-color="rgba(8, 14, 28, 0.85)" />
     </linearGradient>
 
-    <!-- SVG Filters for Glows -->
-    <filter id="glow-cyan" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="8" result="blur1" />
-      <feGaussianBlur stdDeviation="18" result="blur2" />
+    <!-- Subtle Tech Grid -->
+    <pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0, 229, 255, 0.035)" stroke-width="1" />
+    </pattern>
+
+    <!-- Soft Glow Filter -->
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
       <feMerge>
-        <feMergeNode in="blur2" />
-        <feMergeNode in="blur1" />
+        <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
 
-    <filter id="glow-green" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="5" result="blur1" />
-      <feGaussianBlur stdDeviation="12" result="blur2" />
-      <feMerge>
-        <feMergeNode in="blur2" />
-        <feMergeNode in="blur1" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
+    <!-- Subtle Card Shadow -->
+    <filter id="card-shadow" x="-5%" y="-10%" width="110%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4" />
     </filter>
   </defs>
 
   <style>
-    .mono { font-family: 'Courier New', Consolas, 'Fira Code', monospace; }
-    .title-font { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-weight: 900; letter-spacing: 8px; }
-    .sub-font { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-weight: 700; letter-spacing: 3.5px; }
-    .hud-label { font-size: 11px; letter-spacing: 2px; font-weight: 700; }
-    .hud-val { font-size: 14px; font-weight: 700; letter-spacing: 1px; }
+    /* Premium Font Styling */
+    .font-sans {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    }
+    .font-mono {
+      font-family: 'SF Mono', 'Fira Code', 'Roboto Mono', Consolas, monospace;
+    }
 
-    /* ========================================================
-       FUTURISTIC KEYFRAME ANIMATIONS
-       ======================================================== */
-
-    /* 1. Neon Title Pulse & Gentle Cyber Breathing */
-    @keyframes neon-pulse {
+    /* Keyframe Animations */
+    @keyframes title-glow {
       0%, 100% {
-        opacity: 0.92;
-        filter: drop-shadow(0 0 10px #00ffcc) drop-shadow(0 0 25px rgba(0, 255, 204, 0.5));
+        filter: drop-shadow(0 0 12px rgba(0, 229, 255, 0.35));
       }
       50% {
-        opacity: 1;
-        filter: drop-shadow(0 0 16px #00ffcc) drop-shadow(0 0 38px rgba(0, 255, 204, 0.85));
+        filter: drop-shadow(0 0 22px rgba(0, 229, 255, 0.65));
       }
     }
     .anim-title {
-      animation: neon-pulse 3.2s ease-in-out infinite;
+      animation: title-glow 4s ease-in-out infinite;
     }
 
-    /* 2. Sweeping Laser Scanner Beam */
-    @keyframes laser-sweep {
-      0% {
-        transform: translateY(25px);
-        opacity: 0;
-      }
-      10% {
-        opacity: 0.8;
-      }
-      90% {
-        opacity: 0.8;
-      }
-      100% {
-        transform: translateY(295px);
-        opacity: 0;
-      }
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 0.6; transform: scale(0.9); }
+      50% { opacity: 1; transform: scale(1.15); }
     }
-    .anim-scanner {
-      animation: laser-sweep 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-    }
+    .dot-1 { transform-origin: 65px 209px; animation: pulse-dot 2.5s ease-in-out infinite; }
+    .dot-2 { transform-origin: 350px 209px; animation: pulse-dot 2.5s ease-in-out infinite 0.7s; }
+    .dot-3 { transform-origin: 635px 209px; animation: pulse-dot 2.5s ease-in-out infinite 1.4s; }
 
-    /* 3. Moving Laser Dash Lines */
-    @keyframes dash-left {
-      from { stroke-dashoffset: 0; }
-      to { stroke-dashoffset: -48; }
+    @keyframes scan-line {
+      0% { transform: translateY(18px); opacity: 0; }
+      20% { opacity: 0.45; }
+      80% { opacity: 0.45; }
+      100% { transform: translateY(260px); opacity: 0; }
     }
-    @keyframes dash-right {
-      from { stroke-dashoffset: 0; }
-      to { stroke-dashoffset: 48; }
-    }
-    .anim-dash-left {
-      animation: dash-left 1.8s linear infinite;
-    }
-    .anim-dash-right {
-      animation: dash-right 1.8s linear infinite;
-    }
-
-    /* 4. Radar Sensor Blinking Dots */
-    @keyframes radar-blink {
-      0%, 100% {
-        opacity: 0.5;
-        transform: scale(0.85);
-      }
-      50% {
-        opacity: 1;
-        transform: scale(1.3);
-      }
-    }
-    .anim-dot-green {
-      transform-origin: 22px 24px;
-      animation: radar-blink 2s ease-in-out infinite;
-    }
-    .anim-dot-cyan {
-      transform-origin: 22px 24px;
-      animation: radar-blink 2s ease-in-out infinite 0.65s;
-    }
-    .anim-dot-gold {
-      transform-origin: 22px 24px;
-      animation: radar-blink 2s ease-in-out infinite 1.3s;
-    }
-
-    /* 5. Protocol Badge Outer Glow Pulse */
-    @keyframes protocol-glow {
-      0%, 100% {
-        stroke-opacity: 0.6;
-        fill: rgba(0, 255, 153, 0.06);
-      }
-      50% {
-        stroke-opacity: 1;
-        fill: rgba(0, 255, 153, 0.15);
-      }
-    }
-    .anim-protocol {
-      animation: protocol-glow 2.4s ease-in-out infinite;
-    }
-
-    /* 6. Corner Reticles Twinkle */
-    @keyframes corner-twinkle {
-      0%, 100% { opacity: 0.4; }
-      50% { opacity: 1; }
-    }
-    .anim-corner {
-      animation: corner-twinkle 2s ease-in-out infinite;
+    .scanner {
+      animation: scan-line 5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
     }
   </style>
 
-  <!-- Canvas Background -->
-  <rect width="950" height="320" rx="14" fill="url(#bg-grad)" stroke="#1a2744" stroke-width="1.5" />
-  <rect width="950" height="320" rx="14" fill="url(#hex-grid)" />
+  <!-- Base Card -->
+  <rect width="920" height="280" rx="12" fill="url(#bg)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+  <rect width="920" height="280" rx="12" fill="url(#grid-pattern)" />
 
-  <!-- Outer Cyber Frame -->
-  <g stroke="#00e5ff" stroke-width="1.5" fill="none">
-    <path d="M 30 25 L 920 25" stroke="rgba(0, 229, 255, 0.7)" />
-    <path d="M 30 295 L 920 295" stroke="rgba(0, 229, 255, 0.7)" />
-
-    <!-- Corner Brackets -->
-    <path d="M 30 25 L 30 65" />
-    <path d="M 920 25 L 920 65" />
-    <path d="M 30 295 L 30 255" />
-    <path d="M 920 295 L 920 255" />
-
-    <!-- Corner Reticles with Twinkle -->
-    <circle cx="30" cy="25" r="3.5" fill="#00e5ff" class="anim-corner" />
-    <circle cx="920" cy="25" r="3.5" fill="#00e5ff" class="anim-corner" />
-    <circle cx="30" cy="295" r="3.5" fill="#00e5ff" class="anim-corner" />
-    <circle cx="920" cy="295" r="3.5" fill="#00e5ff" class="anim-corner" />
+  <!-- Outer Cyber Tech Brackets -->
+  <g stroke="#00e5ff" stroke-width="1.2" fill="none" opacity="0.75">
+    <!-- Top-left -->
+    <path d="M 22 45 L 22 22 L 45 22" />
+    <!-- Top-right -->
+    <path d="M 875 22 L 898 22 L 898 45" />
+    <!-- Bottom-left -->
+    <path d="M 22 235 L 22 258 L 45 258" />
+    <!-- Bottom-right -->
+    <path d="M 875 258 L 898 258 L 898 235" />
   </g>
 
-  <!-- Animated Laser Scanner Sweep -->
-  <line x1="30" y1="0" x2="920" y2="0" stroke="url(#scan-grad)" stroke-width="2.5" class="anim-scanner" />
+  <!-- Frame Border Subtle Lines -->
+  <line x1="45" y1="22" x2="875" y2="22" stroke="rgba(0, 229, 255, 0.15)" stroke-width="1" />
+  <line x1="45" y1="258" x2="875" y2="258" stroke="rgba(0, 229, 255, 0.15)" stroke-width="1" />
 
-  <!-- Static Midline Accent -->
-  <line x1="30" y1="135" x2="920" y2="135" stroke="rgba(0, 255, 153, 0.2)" stroke-width="1" />
-  <path d="M 30 135 L 70 135 L 85 142 L 865 142 L 880 135 L 920 135" fill="none" stroke="rgba(0, 229, 255, 0.15)" stroke-width="1" />
+  <!-- Animated Scanner Line -->
+  <line x1="25" y1="0" x2="895" y2="0" stroke="rgba(0, 229, 255, 0.5)" stroke-width="1.5" class="scanner" />
 
-  <!-- TOP BAR TELEMETRY -->
-  <!-- Left Clearance Badge with Glowing Pulse -->
-  <g transform="translate(60, 42)">
-    <rect x="0" y="0" width="220" height="28" rx="6" stroke="#00ff99" stroke-width="1.3" class="anim-protocol" />
-    <text x="110" y="18" fill="#00ff99" text-anchor="middle" class="mono hud-label" filter="url(#glow-green)">// PROTOCOL : SWE-ALPHA //</text>
+  <!-- ================= TOP HEADER BAR ================= -->
+  <!-- Left: Status Badge -->
+  <g transform="translate(45, 38)">
+    <rect width="180" height="24" rx="12" fill="rgba(0, 255, 153, 0.06)" stroke="rgba(0, 255, 153, 0.3)" stroke-width="1" />
+    <circle cx="16" cy="12" r="3.5" fill="#00ff99" />
+    <text x="27" y="16" fill="#00ff99" class="font-mono" font-size="10px" font-weight="700" letter-spacing="1.5px">SYSTEM: ONLINE</text>
   </g>
 
-  <!-- Right Telemetry Stream -->
-  <g transform="translate(890, 60)" text-anchor="end">
-    <text fill="#00e5ff" class="mono" font-size="12px" letter-spacing="2.5px" opacity="0.85">LOC :: INDIA [20.59° N] | SYS.V 3.8.4</text>
+  <!-- Right: Location & Coordinates -->
+  <g transform="translate(875, 54)" text-anchor="end">
+    <text fill="#64748b" class="font-mono" font-size="11px" font-weight="600" letter-spacing="1.5px">
+      LOC :: <tspan fill="#94a3b8">INDIA</tspan> | ARCH :: <tspan fill="#38bdf8">X86_64</tspan>
+    </text>
   </g>
 
-  <!-- CENTER LOGO: PRIYANKA PATEL WITH NEON PULSE -->
+  <!-- ================= HERO SECTION ================= -->
+  <!-- Main Title -->
   <g class="anim-title">
-    <text x="475" y="125" text-anchor="middle" fill="#00ffcc" class="title-font" font-size="42px" filter="url(#glow-cyan)">
-      PRIYANKA PATEL
-    </text>
-    <text x="475" y="125" text-anchor="middle" fill="#ffffff" class="title-font" font-size="42px">
+    <text x="460" y="112" text-anchor="middle" fill="url(#title-grad)" class="font-sans" font-size="38px" font-weight="800" letter-spacing="6px">
       PRIYANKA PATEL
     </text>
   </g>
 
-  <!-- SUBTITLE & MOVING LASER DASH LINES -->
-  <g transform="translate(475, 155)">
-    <!-- Left Moving Laser Line -->
-    <line x1="-390" y1="-5" x2="-230" y2="-5" stroke="#00e5ff" stroke-width="1.5" stroke-dasharray="10 5" class="anim-dash-left" opacity="0.75" />
-    <polygon points="-230,-7 -222,-5 -230,-3" fill="#00e5ff" />
-    
-    <!-- Right Moving Laser Line -->
-    <line x1="230" y1="-5" x2="390" y2="-5" stroke="#00e5ff" stroke-width="1.5" stroke-dasharray="10 5" class="anim-dash-right" opacity="0.75" />
-    <polygon points="230,-7 222,-5 230,-3" fill="#00e5ff" />
+  <!-- Subtitle Flanked by Smooth Gradient Lines -->
+  <g transform="translate(460, 140)">
+    <!-- Left Gradient Line -->
+    <line x1="-390" y1="-4" x2="-220" y2="-4" stroke="url(#laser-left)" stroke-width="1.2" />
+    <circle cx="-220" cy="-4" r="2" fill="#00e5ff" />
 
-    <text x="0" y="0" text-anchor="middle" fill="#00e5ff" class="mono sub-font" font-size="13px" letter-spacing="3.5px">
+    <!-- Center Subtitle Text -->
+    <text x="0" y="0" text-anchor="middle" fill="#38bdf8" class="font-sans" font-size="12px" font-weight="700" letter-spacing="3px">
       SOFTWARE ENGINEER • BACKEND SYSTEMS • ALGORITHMS
     </text>
+
+    <!-- Right Gradient Line -->
+    <circle cx="220" cy="-4" r="2" fill="#00e5ff" />
+    <line x1="220" y1="-4" x2="390" y2="-4" stroke="url(#laser-right)" stroke-width="1.2" />
   </g>
 
-  <!-- BOTTOM 3 TELEMETRY CARDS WITH RADAR PULSING SENSORS -->
+  <!-- ================= 3 TELEMETRY CARDS ================= -->
   <!-- CARD 1: Core Architecture -->
-  <g transform="translate(60, 195)">
-    <rect width="255" height="74" rx="8" fill="url(#card-grad)" stroke="rgba(0, 255, 153, 0.5)" stroke-width="1.2" />
-    <circle cx="22" cy="24" r="4.5" fill="#00ff99" filter="url(#glow-green)" class="anim-dot-green" />
-    <text x="35" y="28" fill="#88ffa0" class="mono hud-label">SYSTEMS ARCHITECTURE</text>
-    <text x="22" y="55" fill="#00ff99" class="mono hud-val">Data Structures &amp; DSA (C)</text>
+  <g transform="translate(45, 185)" filter="url(#card-shadow)">
+    <rect width="260" height="70" rx="8" fill="url(#card-bg)" stroke="rgba(74, 222, 128, 0.25)" stroke-width="1" />
+    <!-- Top Row -->
+    <circle cx="20" cy="24" r="3.5" fill="#4ade80" class="dot-1" />
+    <text x="32" y="27" fill="#4ade80" class="font-mono" font-size="10px" font-weight="700" letter-spacing="1.5px">CORE ARCHITECTURE</text>
+    <!-- Bottom Row (Clean high-contrast value) -->
+    <text x="20" y="52" fill="#f8fafc" class="font-sans" font-size="13px" font-weight="600" letter-spacing="0.3px">Data Structures &amp; DSA (C)</text>
   </g>
 
-  <!-- CARD 2: Full-Stack Engineering -->
-  <g transform="translate(347, 195)">
-    <rect width="255" height="74" rx="8" fill="url(#card-grad)" stroke="rgba(0, 229, 255, 0.5)" stroke-width="1.2" />
-    <circle cx="22" cy="24" r="4.5" fill="#00e5ff" filter="url(#glow-cyan)" class="anim-dot-cyan" />
-    <text x="35" y="28" fill="#80e5ff" class="mono hud-label">FULL-STACK PIPELINE</text>
-    <text x="22" y="55" fill="#00e5ff" class="mono hud-val">MERN Stack &amp; Scalable Web</text>
+  <!-- CARD 2: Full-Stack Pipeline -->
+  <g transform="translate(330, 185)" filter="url(#card-shadow)">
+    <rect width="260" height="70" rx="8" fill="url(#card-bg)" stroke="rgba(56, 189, 248, 0.25)" stroke-width="1" />
+    <!-- Top Row -->
+    <circle cx="20" cy="24" r="3.5" fill="#38bdf8" class="dot-2" />
+    <text x="32" y="27" fill="#38bdf8" class="font-mono" font-size="10px" font-weight="700" letter-spacing="1.5px">FULL-STACK PIPELINE</text>
+    <!-- Bottom Row -->
+    <text x="20" y="52" fill="#f8fafc" class="font-sans" font-size="13px" font-weight="600" letter-spacing="0.3px">MERN Stack &amp; Scalable Web</text>
   </g>
 
-  <!-- CARD 3: Core Philosophy -->
-  <g transform="translate(635, 195)">
-    <rect width="255" height="74" rx="8" fill="url(#card-grad)" stroke="rgba(255, 215, 0, 0.5)" stroke-width="1.2" />
-    <circle cx="22" cy="24" r="4.5" fill="#ffd700" class="anim-dot-gold" />
-    <text x="35" y="28" fill="#ffe580" class="mono hud-label">CORE PHILOSOPHY</text>
-    <text x="22" y="55" fill="#ffd700" class="mono hud-val">Elegant Code: Art &amp; Science</text>
+  <!-- CARD 3: Engineering Mindset -->
+  <g transform="translate(615, 185)" filter="url(#card-shadow)">
+    <rect width="260" height="70" rx="8" fill="url(#card-bg)" stroke="rgba(251, 191, 36, 0.25)" stroke-width="1" />
+    <!-- Top Row -->
+    <circle cx="20" cy="24" r="3.5" fill="#fbbf24" class="dot-3" />
+    <text x="32" y="27" fill="#fbbf24" class="font-mono" font-size="10px" font-weight="700" letter-spacing="1.5px">CORE PHILOSOPHY</text>
+    <!-- Bottom Row -->
+    <text x="20" y="52" fill="#f8fafc" class="font-sans" font-size="13px" font-weight="600" letter-spacing="0.3px">Elegant Code: Art &amp; Science</text>
   </g>
 </svg>
