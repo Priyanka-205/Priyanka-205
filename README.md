@@ -1,10 +1,10 @@
 <div align="center">
 
-  <!-- Futuristic Sci-Fi HUD Banner -->
+  <!-- Futuristic Sci-Fi Animated HUD Banner -->
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Priyanka-205/Priyanka-205/main/header.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Priyanka-205/Priyanka-205/main/header.svg">
-    <img src="https://raw.githubusercontent.com/Priyanka-205/Priyanka-205/main/header.svg" width="100%" alt="Priyanka Patel // Futuristic Cyber HUD" />
+    <source media="(prefers-color-scheme: dark)" srcset="./header.svg?v=2">
+    <source media="(prefers-color-scheme: light)" srcset="./header.svg?v=2">
+    <img src="https://raw.githubusercontent.com/Priyanka-205/Priyanka-205/main/header.svg?v=2" width="100%" alt="Priyanka Patel // Futuristic Cyber HUD" />
   </picture>
 
   <br/>
